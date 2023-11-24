@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="OLMS_icon.png" alt="The Online Library Management System" title="The Online Library Management System">
+            </a>
+        </div>
+        <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+            <div class="dropdown">
+                <button class="dropbtn"><a href="categories.html"></a>
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="categories.html">To Kill a Mockingbird</a>
+                <a href="categories.html">1984</a>
+                <a href="categories.html">The Great Gatsby</a>
+                <a href="categories.html">Moby-Dick</a>
+                <a href="categories.html">More...</a>
+                </div>
+            </div>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="payment.html">Payment Receipt</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="">
+            <div class="row">
+            <div class="col">
+                <h3 class="title">Payment Receipt</h3>
+                <div class="inputBox">
+                    <span>Cards Accepted :</span>
+                    <img src="cards.png" alt="Accepted Cards">
+                </div>
+                <div class="inputBox">
+                    <span>Name :</span>
+                    <input type="text" placeholder="Enter Name On Card">
+                </div>
+                <div class="inputBox">
+                    <span>Credit Card Number :</span>
+                    <input type="number" placeholder="1111-2222-3333-4444">
+                </div>
+                <div class="inputBox">
+                    <span>Expiry Month :</span>
+                    <input type="text" placeholder="January">
+                </div>
+                <div class="flex">
+                <div class="inputBox">
+                    <span>Expiry Year :</span>
+                    <input type="number" placeholder="2022">
+                </div>
+                <div class="inputBox">
+                    <span>CVV :</span>
+                    <input type="text" placeholder="1234">
+                </div>
+            </div>
+            </div>
+            <input type="submit" value="Proceed To Checkout" class="submit-btn">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Library Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="OLMS_icon.png" alt="The Online Library Management System" title="The Online Library Management System">
+            </a>
+        </div>
+        <nav class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="categories.html">Categories</a></li>
+                <div class="dropdown">
+                    <button onclick="toggleDropdown()" class="dropbtn"><i class="fa fa-caret-down"></i></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="categories.html">To Kill a Mockingbird</a>
+                        <a href="categories.html">1984</a>
+                        <a href="categories.html">The Great Gatsby</a>
+                        <a href="categories.html">Moby-Dick</a>
+                        <a href="categories.html">More...</a>
+                    </div>
+                </div>
+            </div>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="payment.html">Payment Receipt</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        </nav>
+    </header>
+        <h1>Online Library Management System</h1>
+        <div class="w3-content w3-section" style="max: width 800px; height: 750px; justify-content: center; align-items: center;display: flex;" >
+            <img class="mySlides" src="slide.jpg" style="width: 100%; height: 750px">
+            <img class="mySlides" src="slide5.jpg" style="width: 100%; height: 750px">
+            <img class="mySlides" src="slide6.jpg" style="width:100%; height: 750px">
+            <img class="mySlides" src="slide4.jpg" style="width: 100%; height: 750px;">
+        </div><br><br>
+        <div class="container">
+            <div class="card__container">
+                <article class="card__article">
+                    <img src="to-kill-a-mockingbird.webp" alt="image" class="card__img">
+                    <div class="card__data">
+                        <span class="card__description">To Kill A Mocking bird</span>
+                        <h2 class="card__title">Harper lee</h2>
+                        <p>12.99</p>
+                        <a href="categories.html" class="card__button">Add to Cart</a>
+                    </div>
+                </article>
+                <article class="card__article">
+                                <img src="1984.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">1984</span>
+                                    <h2 class="card__title">George Orwell</h2>
+                                    <p>9.9</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-great-gatsby.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Great Gatsby</span>
+                                    <h2 class="card__title">F. Scott Fitzgerald</h2>
+                                    <p>11.50</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="moby-dick.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Moby-Dick</span>
+                                    <h2 class="card__title">Herman Melvile</h2>
+                                    <p>13.50</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="brave-new-world.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Brave New World</span>
+                                    <h2 class="card__title">Aldous Huxley</h2>
+                                    <p>10.75</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="pride-and-prejudice.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Pride and Prejudice</span>
+                                    <h2 class="card__title">Jane Austen</h2>
+                                    <p>9.99</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-catcher-in-the-rye.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Catcher In The Rye</span>
+                                    <h2 class="card__title">J.D. Salinger</h2>
+                                    <p>8.50</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-lord-of-rings.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Lord Of Rings</span>
+                                    <h2 class="card__title">J.R.R. Tolkien</h2>
+                                    <p>8.50</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-hobbit.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Hobbit</span>
+                                    <h2 class="card__title">J.R.R. Tolkien</h2>
+                                    <p>15.99</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-vinci-code.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Da Vinci Code</span>
+                                    <h2 class="card__title">Dan Brown</h2>
+                                    <p>15.45</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-alchemist.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Alchemist</span>
+                                    <h2 class="card__title">Paulo Coelho</h2>
+                                    <p>10.50</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-tail-of-two-cities.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Tale Of Two Cities</span>
+                                    <h2 class="card__title">Charles Dickens</h2>
+                                    <p>12.25</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="war-and-peace.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">War and Peace</span>
+                                    <h2 class="card__title">Leo Tolstoy</h2>
+                                    <p>16.25</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-picture-of-dorian-gray.png" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Picture Of Dorian Gray</span>
+                                    <h2 class="card__title">Oscar Wilde</h2>
+                                    <p>11.99</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="huckleberry-finn.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Adventures of Huckleberry Finn</span>
+                                    <h2 class="card__title">Mark twain</h2>
+                                    <p>10.25</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="jane-eyre.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Jane Eyre</span>
+                                    <h2 class="card__title">Charlotte Bronte</h2>
+                                    <p>9.50</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-road.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Road</span>
+                                    <h2 class="card__title">Cormac McCarthy</h2>
+                                    <p>13.75</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="frankenstein.png" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Frankestine</span>
+                                    <h2 class="card__title">Mary Shelley</h2>
+                                    <p>11.25</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-stand.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Stand</span>
+                                    <h2 class="card__title">Stephen King</h2>
+                                    <p>12.25</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="crime-and-punishment.png" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Crime and Punishment</span>
+                                    <h2 class="card__title">Fyodor Dostoevsky</h2>
+                                    <p>16.50</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="les-miserables.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Les Miserables</span>
+                                    <h2 class="card__title">Victor Hugo</h2>
+                                    <p>13.99</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-shining.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Shining</span>
+                                    <h2 class="card__title">Stephen King</h2>
+                                    <p>11.75</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-odyssey.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Odyssey</span>
+                                    <h2 class="card__title">Homer</h2>
+                                    <p>12.25</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-stranger.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Stranger</span>
+                                    <h2 class="card__title">Albert Camus</h2>
+                                    <p>12.25</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="gone_with_the_wind.jpg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Gone With The Wind</span>
+                                    <h2 class="card__title">Margaret Mitchell</h2>
+                                    <p>13.25</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="kite-runner.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Kite Runner</span>
+                                    <h2 class="card__title">Khaled Hosseini</h2>
+                                    <p>12.25</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="bell-jar.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Bell Jar</span>
+                                    <h2 class="card__title">Sylvia Plath</h2>
+                                    <p>10.99</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="monte-cristo.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Count Of Monte Cristo</span>
+                                    <h2 class="card__title">Alexandre Dumas</h2>
+                                    <p>12.99</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="anna-karenina.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">Anna karenina</span>
+                                    <h2 class="card__title">Leo Tolstoy</h2>
+                                    <p>12.75</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+                            <article class="card__article">
+                                <img src="the-grapes-of-wrath.jpeg" alt="image" class="card__img">
+                                <div class="card__data">
+                                    <span class="card__description">The Grapes Of Wrath</span>
+                                    <h2 class="card__title">Charles Dickens</h2>
+                                    <p>11.99</p>
+                                    <a href="categories.html" class="card__button">Add to Cart</a>
+                                </div>
+                            </article>
+            </div>
+        </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    var myIndex = 0;
+    carousel();
+    function carousel() 
+        {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) 
+                {
+                    x[i].style.display = "none";  
+                }
+            myIndex++;
+            if (myIndex > x.length) {myIndex = 1}    
+            x[myIndex-1].style.display = "block";  
+            setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+
+        function toggleDropdown() {
+            var dropdown = document.getElementById("myDropdown");
+            dropdown.classList.toggle("show");
+        }
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+            }
+            }
+        }   
+    </script>
+</html>
